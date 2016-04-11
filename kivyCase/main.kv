@@ -1,0 +1,21 @@
+#:kivy 1.9.0
+ 
+<Demo>:
+    display: display
+    click: click_me
+ 
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: 'vertical'
+        padding: 20
+ 
+        Button:
+            id: click_me
+            text: 'Click Me!'
+            on_press: root.do_something()
+ 
+        Label:
+            id: display
+            text: 'Something happened...'
+  
